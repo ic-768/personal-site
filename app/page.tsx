@@ -1,13 +1,17 @@
 import Link from "next/link";
 
+import GithubIcon from "@/components/ui/icons/github";
+
 export default function Home() {
   return (
     <>
-      <header className="flex w-full py-4 px-6">
-        <Link href="/">About Me</Link>
+      <header className="flex justify-between items-center py-4 px-6 w-full">
+        <Link href="https://github.com/ic-768">
+          <GithubIcon />
+        </Link>
       </header>
 
-      <main className="flex min-h-screen flex-col items-center p-24">
+      <main className="flex flex-col items-center p-24 min-h-screen">
         <span>
           Hello! My name is{" "}
           <span className="font-bold">Ioannis Chrysostomakis,</span>
